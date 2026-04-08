@@ -1,15 +1,95 @@
-node_modules
-dist
-.env
-.env.local
-.env.development
-.env.production
+# =========================================
+# FILE INFO
+# =========================================
+# File Name   : .gitignore
+# Type        : Config
+# Feature     : Shared
+# Source Path : .gitignore
+# Used In     : Root Monorepo Project
+# UI Section  : Git Ignore Rules
+# Status      : SHARED ACTIVE
+# Notes       : Safe ignore rules for apps/web + apps/api
+# =========================================
 
-# logs
+# =========================================
+# DEPENDENCIES
+# =========================================
+node_modules/
+**/node_modules/
+
+# =========================================
+# BUILD OUTPUT
+# =========================================
+dist/
+build/
+coverage/
+**/dist/
+**/build/
+**/coverage/
+
+# =========================================
+# VITE / CACHE / TEMP
+# =========================================
+.vite/
+.tmp/
+temp/
+tmp/
+.cache/
+.parcel-cache/
+
+# =========================================
+# ENV FILES
+# =========================================
+.env
+.env.*
+!.env.example
+
+# =========================================
+# LOG FILES
+# =========================================
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+*.log
 
-# OS
+# =========================================
+# OS FILES
+# =========================================
 .DS_Store
 Thumbs.db
+
+# =========================================
+# EDITOR / IDE
+# =========================================
+.vscode/
+.idea/
+
+# =========================================
+# TYPESCRIPT / TOOLING
+# =========================================
+*.tsbuildinfo
+
+# =========================================
+# PRISMA
+# =========================================
+prisma/dev.db
+prisma/dev.db-journal
+
+# =========================================
+# UPLOADS / GENERATED FILES (optional)
+# Uncomment if later needed
+# =========================================
+# uploads/
+# public/uploads/
+
+# =========================================
+# TEST OUTPUT
+# =========================================
+playwright-report/
+test-results/
+
+# =========================================
+# MISC
+# =========================================
+*.local
