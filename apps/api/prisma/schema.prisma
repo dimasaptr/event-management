@@ -1,0 +1,17 @@
+// =========================================
+// FILE INFO
+// =========================================
+// File Name   : schema.prisma
+// Type        : Prisma Schema
+// Feature     : Shared
+// Route       : -
+// Source Path : apps/api/prisma/schema.prisma
+// Used In     : Backend Database Schema
+// UI Section  : Database Core
+// Status      : PLACEHOLDER ONLY
+// Notes       : Reserved for backend database design
+// =========================================
+
+generator client {
+  provider = "prisma-client-js"
+}
