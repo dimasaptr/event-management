@@ -4,7 +4,7 @@
  * =========================================
  * File Name   : seed.ts
  * Type        : Seed Script
- * Feature     : Shared
+ * Feature     : Feature 1 & 2 - Database Seed
  * Route       : -
  * Source Path : apps/api/prisma/seed.ts
  * Used In     : Database Seed
